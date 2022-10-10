@@ -21,9 +21,7 @@ jobs:
           use-public-rspm: true
 
       - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          needs: igraph
 
       - name: test
-        run: library(igraph)
+        run: library(test)
         shell: Rscript {0}
